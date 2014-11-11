@@ -1,0 +1,24 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+repositories {  
+    mavenCentral()
+    mavenLocal() 
+}  
+  
+dependencies {  
+    compile (  
+    	'commons-dbcp:commons-dbcp:1.4',
+    	'org.apache.activemq:activemq-core:5.7.0',
+        'com.sun.jdmk:jmxtools:1.2.1',
+        'org.apache.activemq:activemq-spring:5.10.0',
+        'org.springframework:spring-context:3.2.11.RELEASE',
+        'org.springframework:spring-jdbc:3.2.11.RELEASE',
+        'org.springframework:spring-jms:3.2.11.RELEASE',
+        'org.springframework:spring-jdbc:3.2.11.RELEASE',
+        'junit:junit:4.12-beta-2',
+        'com.oracle:ojdbc6:11.2.0.1.0',
+        'org.quartz-scheduler:quartz:2.2.1',
+        'org.springframework:spring-test:3.2.11.RELEASE'
+    )  
+}
